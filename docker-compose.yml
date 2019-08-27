@@ -1,0 +1,18 @@
+---
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - ".:/app"
+      - "ivy2:/root/.ivy2"
+    ports:
+      - "9200:9200"
+    environment:
+      DATABASE_HOST: host
+      DATABASE_USERNAME: username
+      DATABASE_PASSWORD: pwd
+      DATABASE_NAME: db_name
+
+volumes:
+  ivy2:

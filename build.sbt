@@ -26,4 +26,7 @@ libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % LogbackVersion
 )
 
+
+mainClass in (Compile, run) := Some("com.shu.Main")
+
 scalacOptions ++= Seq("-Ypartial-unification")
