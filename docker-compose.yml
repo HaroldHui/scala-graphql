@@ -8,6 +8,7 @@ services:
       - "ivy2:/root/.ivy2"
     ports:
       - "9200:9200"
+    command: "sbt run"
     environment:
       DATABASE_HOST: host
       DATABASE_USERNAME: username
