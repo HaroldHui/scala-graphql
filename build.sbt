@@ -2,16 +2,16 @@ name := "scala-playground"
 
 version := "0.1"
 
-scalaVersion := "2.12.9"
+scalaVersion := "2.12.10"
 
-val circeVersion = "0.11.1"
+val circeVersion = "0.12.2"
 val sangriaVersion = "1.4.2"
-val http4sVersion = "0.20.10"
+val http4sVersion = "0.20.11"
 val LogbackVersion = "1.2.3"
 
 libraryDependencies ++= Seq(
-  "org.typelevel" %% "cats-core" % "1.6.1",
-  "org.typelevel" %% "cats-effect" % "1.3.1",
+  "org.typelevel" %% "cats-core" % "2.0.0",
+  "org.typelevel" %% "cats-effect" % "2.0.0",
   "io.circe" %% "circe-core" % circeVersion,
   "io.circe" %% "circe-generic" % circeVersion,
   "io.circe" %% "circe-parser" % circeVersion,
